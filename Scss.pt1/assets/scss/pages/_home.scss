@@ -1,0 +1,461 @@
+@import "../utils/color";
+@import "../utils/mixins";
+
+.main {
+
+    height: 500vh;
+    margin: 20px;
+
+    &__section2 {
+        width: 100%;
+        height: 300px;
+
+
+        &__container {
+            height: 100%;
+
+            @include flex(flex, space-around, center);
+
+            &__row {
+
+                height: 300px;
+                border: none;
+                @include flex(flex, center, center);
+                border-radius: 20px;
+                background-color: $colorf;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                width: 30%;
+
+                &__col4 {
+                    @include flex(flex, center, start);
+                    flex-direction: column;
+                    gap: 20px;
+                    width: 400px;
+
+                    h3 {
+                        font-size: 20px;
+                        color: $colorbl;
+                    }
+
+                    span {
+                        color: $colorgr;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__section3 {
+
+        margin: 20px;
+        width: 100%;
+        height: 297px;
+
+
+
+
+        &__image {
+            position: relative;
+
+
+
+            &__container {
+
+                position: absolute;
+                z-index: -1;
+                width: 97%;
+                height: 297px;
+                border-radius: 20px;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: left;
+                background-image: url('https://preview.colorlib.com/theme/waterboat/images/hero_1.jpg.webp');
+
+                &__row {
+
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    @include flex(flex, center, center);
+
+                    .colorback {
+                        width: 100%;
+                        border-radius: 20px;
+                        height: 297px;
+                        position: absolute;
+                        opacity: 0.7;
+                        z-index: 1;
+
+                        background-color: $headericon;
+
+                    }
+
+                    .col-2 {
+
+                        gap: 15px;
+                        z-index: 2;
+                        @include flex(flex, center, center);
+                        flex-direction: column;
+                        color: $colorf;
+
+                        h3 {
+                            cursor: pointer;
+                            font-size: 50px;
+                        }
+
+                        span {
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+
+    &__section4 {
+        margin: 20px;
+        width: 100%;
+        height: 297px;
+
+        &__top {
+            width: 100%;
+            @include flex(flex, center, center);
+            flex-direction: column;
+            gap: 10px;
+
+            p {
+                color: $headericon;
+                font-size: 18px;
+
+            }
+
+            h2 {
+                color: $colorbl;
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+        }
+
+        &__middle {
+            width: 100%;
+            margin-bottom: 10px;
+            @include flex(flex, center, center);
+
+            .bluecolor {
+                background-color: blue;
+                height: 2px;
+                width: 60px;
+
+
+            }
+        }
+
+
+        &__right {
+            width: 100%;
+            @include flex(flex, center, center);
+
+            gap: 10px;
+
+            &__container {
+                width: 98%;
+
+                &__row {
+                    @include flex(flex, center, center);
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+
+                    .col-4 {
+                        margin-left: 3px;
+                        width: 350px;
+                        height: 350px;
+
+                        margin-bottom: 30px;
+                        border-radius: 20px;
+                        overflow: hidden;
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+                        .cardsimage {
+
+                            img {
+                                object-fit: cover;
+                                width: 100%;
+                                height: 235px;
+
+                            }
+
+                        }
+
+                        .aboutss {
+                            padding-top: 20px;
+                            @include flex(flex, space-around, center);
+
+                            .rightabout {
+
+                                p {
+                                    @include flex(flex, center, center);
+                                    background-color: $headericon;
+                                    width: 80px;
+                                    height: 38px;
+                                    font-size: 16px;
+                                    border: none;
+                                    border-radius: 10px;
+                                    color: $colorf;
+                                }
+                            }
+
+                            .leftabout {
+                                @include flex(flex, center, start);
+                                flex-direction: column;
+                                gap: 15px;
+
+
+
+                                .leftabout1 {
+                                    @include flex(flex, center, center);
+                                    gap: 7px;
+
+                                    p {
+                                        color: $colorbl;
+                                        font-size: 15px;
+                                    }
+
+                                }
+
+                                .leftabout2 {
+                                    @include flex(flex, center, center);
+                                    gap: 7px;
+
+                                    span {
+                                        color: $colorgr;
+                                        font-size: 14px;
+                                    }
+                                }
+
+
+                            }
+
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+
+
+
+    &__section5 {
+        margin: 20px;
+        margin-top: 42%;
+        width: 100%;
+        height: 297px;
+
+        &__top {
+            width: 100%;
+            @include flex(flex, center, center);
+            flex-direction: column;
+            gap: 10px;
+
+            p {
+                color: $headericon;
+                font-size: 18px;
+
+            }
+
+            h2 {
+                color: $colorbl;
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+        }
+
+        &__middle {
+            width: 100%;
+            margin-bottom: 10px;
+            @include flex(flex, center, center);
+
+            .bluecolor {
+                background-color: blue;
+                height: 2px;
+                width: 60px;
+
+
+            }
+        }
+
+
+        &__right {
+            width: 100%;
+            @include flex(flex, center, center);
+
+            margin-top: 30px;
+            gap: 10px;
+
+            &__container {
+                width: 98%;
+
+                &__row {
+                    @include flex(flex, center, center);
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+
+                    .col-3 {
+                        overflow: hidden;
+                        width: 255px;
+                        height: 421px;
+
+                        .divabout {
+                            @include flex(flex, center, center);
+                            flex-direction: column;
+                            padding-top: 20px;
+                            gap: 10px;
+
+                            p {
+                                color: $colorbl;
+                                font-size: 25px;
+                            }
+
+                            span {
+                                color: $headericon;
+                                font-size: 18px;
+                            }
+                        }
+
+                        .imgandicon {
+
+                            width: 255px;
+                            height: 319px;
+                            position: relative;
+                            transition: 0.3s linear;
+
+                            &:hover {
+
+                                transform: scale(1.05);
+                            }
+
+                            .insideimg {
+
+                                img {
+
+                                    object-fit: contain;
+
+                                    width: 255px;
+                                    height: 319px;
+
+                                }
+                            }
+
+
+
+                        }
+
+
+                    }
+                }
+            }
+
+        }
+    }
+
+
+
+    &__section6 {
+
+        margin: 20px;
+        margin-top: 20%;
+        width: 100%;
+        height: 297px;
+
+
+
+
+        &__image {
+            position: relative;
+
+
+
+            &__container {
+
+                position: absolute;
+                z-index: -1;
+                width: 97%;
+                height: 297px;
+                border-radius: 20px;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: left;
+                background-image: url('https://preview.colorlib.com/theme/waterboat/images/hero_1.jpg.webp');
+
+                &__row {
+
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    @include flex(flex, center, center);
+
+                    .colorback {
+                        width: 100%;
+                        border-radius: 20px;
+                        height: 297px;
+                        position: absolute;
+                        opacity: 0.7;
+                        z-index: 1;
+
+                        background-color: $headericon;
+
+                    }
+
+                    .insidethesection {
+                        gap: 15px;
+                        z-index: 2;
+                        @include flex(flex, center, center);
+                        flex-direction: column;
+                        color: $colorf;
+
+                        h2 {
+                            font-size: 50px;
+                        }
+
+                        p {
+
+                            font-size: 25px;
+                        }
+
+                        &__link {
+                            width: 150px;
+                            height: 60px;
+                            background-color: rgb(179, 147, 87);
+
+                            @include flex(flex, center, center);
+                            border-radius: 10px;
+                              
+
+
+                         
+                            a {
+                              
+                                color: $colorf;
+
+                                font-size: 20px;
+                              
+                            }
+                        }
+                    }
+
+
+                }
+
+            }
+        }
+    }
+
+}

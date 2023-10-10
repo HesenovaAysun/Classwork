@@ -1,0 +1,105 @@
+@import "../utils/color";
+@import "../utils/mixins";
+
+
+.icon  {
+    @include flex (flex,center,center);
+
+ 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  
+    background-color:$headericon;
+    color:$colorf ;
+}
+
+.fa-sailboat{
+    font-size: 50px;
+    color: $headericon;
+    width: 90px;
+    position: relative;
+    height: 60px;
+    .grey{
+        z-index: -1;
+        width: 35px;
+        height: 35px;
+        opacity: 0.4;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        background-color: $colorgr;
+    }
+}
+
+
+.fa-location-dot{
+    color: $headericon;
+    font-size: 18px;
+}
+
+.fa-calendar{
+    color: $headericon;
+    font-size: 18px;
+}
+.socialicons{
+    position: absolute;
+    bottom: 4%;
+    left: 4%;
+    color: $headericon;
+    gap: 10px;
+    display: flex;
+    align-items: start;
+  flex-direction: column;
+    .fa-facebook-f{
+        @include flex(flex, center,center);
+        font-size: 20px;
+        width: 40px;
+        background-color: $colorf;
+        height: 40px;
+        transition: 0.3s linear;
+
+        &:hover{
+            cursor: pointer;
+
+            background-color: $colorbl;
+            color: $colorf;
+        }
+    }
+
+    .fa-twitter{
+
+        @include flex(flex, center,center);
+        font-size: 20px;
+        width: 40px;
+        background-color: $colorf;
+        height: 40px;
+        transition: 0.3s linear;
+
+        &:hover{
+            cursor: pointer;
+
+            background-color: $colorbl;
+            color: $colorf;
+        }
+    }
+
+    .fa-linkedin-in{
+        @include flex(flex, center,center);
+        font-size: 20px;
+        width: 40px;
+        background-color: $colorf;
+        height: 40px;
+
+        transition: 0.3s linear;
+
+        &:hover{
+            cursor: pointer;
+
+            background-color: $colorbl;
+            color: $colorf;
+        }
+
+    }
+}
